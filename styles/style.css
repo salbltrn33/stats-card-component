@@ -1,0 +1,142 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: white;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  body{
+    background-color: #090D1B;
+  }
+
+  #project-container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+  }
+
+  #component-container{
+    width: 1100px;
+    height: 430px;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 5px;
+    background-image: url("/images/image-header-desktop.jpg");
+    background-size: 550px;
+    background-repeat: no-repeat;
+    background-position: right;
+    display: flex;
+  }
+
+  #section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    flex: 1;
+  }
+
+  #section1 h1{
+    color: white;
+    font-family: "Lexend Deca", serif;
+    font-weight: 500;
+    font-size: 30px;
+  }
+
+  #section1 span{
+    color: #A85BDA;
+  }
+
+  #description{
+    color: #A2A1B6;
+    font-family: "Lexend Deca", serif;
+    width: 370px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    line-height: 25px;
+  }
+
+  #stats-container{
+    display: flex;
+    gap: 40px;
+  }
+
+  #stats-container h2{
+    color: white;
+    font-family: "Inter", serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .stats p{
+    color: #A2A1B6;
+    font-family: "Inter", serif;
+    font-size: 12px;
+    margin: 0;
+  }
+
+  #section2{
+    height: 430px;
+    width: 550px;
+    flex: 1;
+    background-color: hsl(277, 69%, 50%, 0.6);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+@media (max-width: 1130px){
+    #component-container{
+        width: 320px;
+        height: 750px;
+        background-size: 375px 250px;
+        background-position: top;
+        flex-direction: column-reverse;
+    }
+
+    #section2{
+        width: 320px;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 0;
+    }
+
+    #section1{
+        flex: 2;
+    }
+
+    #content{
+        text-align: center;
+        height: 440px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 250px;
+    }
+
+    #content h1{
+        margin-top: 0;
+        font-size: 25px;
+    }
+
+    br{
+        display: none;
+    }
+
+    #content p{
+        width: 270px;
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+
+    #stats-container{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .stats p{
+        font-size: 20px;
+    }
+}
